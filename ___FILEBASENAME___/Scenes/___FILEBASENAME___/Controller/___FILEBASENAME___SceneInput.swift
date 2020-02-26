@@ -6,8 +6,9 @@
 //  ___COPYRIGHT___
 //
 
-import Foundation
+import UIKit
 
 protocol ___FILEBASENAME___: class, AutoMockable {
-
+    var sceneOutput: ___VARIABLE_productName:identifier___SceneOutput? { get set }
+    var viewController: UIViewController? { get }
 }

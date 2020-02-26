@@ -10,4 +10,6 @@ import Foundation
 
 protocol ___FILEBASENAME___: AutoMockable {
 	var output: ___VARIABLE_productName:identifier___CoordinatorOutput? { get set }
+
+	func start()
 }

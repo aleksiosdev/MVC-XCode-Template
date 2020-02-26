@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ___FILEBASENAME___: class, AutoMockable {
-	/// Notify presenter that view is ready
+	/// Notify that view is ready
 	func viewLoaded()
 }

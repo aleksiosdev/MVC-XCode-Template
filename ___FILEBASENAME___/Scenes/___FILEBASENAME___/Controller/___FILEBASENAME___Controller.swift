@@ -6,14 +6,17 @@
 //  ___COPYRIGHT___
 //
 
-import Foundation
+import UIKit
 
 final class ___FILEBASENAME___ {
 	// MARK: - Properties
 	weak var viewInput: ___VARIABLE_productName:identifier___ViewInput?
 	weak var sceneOutput: ___VARIABLE_productName:identifier___SceneOutput?
 
-	init(viewInput: ___VARIABLE_productName:identifier___ViewInput?) {
+	let inputModel: ___VARIABLE_productName:identifier___Model
+
+	init(inputModel: ___VARIABLE_productName:identifier___Model, viewInput: ___VARIABLE_productName:identifier___ViewInput?) {
+		self.inputModel = inputModel
 		self.viewInput = viewInput
 	}
 }
@@ -27,5 +30,7 @@ extension ___FILEBASENAME___: ___VARIABLE_productName:identifier___ViewOutput {
 
 // MARK: - ___VARIABLE_productName:identifier___SceneInput
 extension ___FILEBASENAME___: ___VARIABLE_productName:identifier___SceneInput {
-
+	var viewController: UIViewController? {
+		return viewInput as? UIViewController
+	}
 }
